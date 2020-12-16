@@ -13,7 +13,12 @@
     font-size: $default-font-size;
     height: 110px;
     background-color: $color-grey-light-1;
-    transform: skewX(-5deg)
+    transform: skewX(-5deg);
+    transition: all .3s;
+    &:hover{
+        
+        transform: skewX(-10deg);
+    }
 }
 .stories__shape {
     width: 15rem;
