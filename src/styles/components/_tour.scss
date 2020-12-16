@@ -1,0 +1,64 @@
+.tour__section{
+    padding: 0 20rem;
+  
+   
+}
+.tour__container {
+    margin: 12rem;
+    transform: skewY(-4deg)
+  
+}
+.tour__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.tour__card{
+    border: .1rem solid black;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.8);
+    height: 48rem;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+   
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.8);
+    }
+
+}
+.tour__card-icon{
+    color: $white;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    padding: .6rem;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.8);
+}
+.tour__card-h3{
+    color: $white;
+    font-size: $upper-font-size;
+    font-weight: $bold;
+    text-align: center;
+    text-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+.tour__card-p{
+    color: $color-grey-light-1;
+    text-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.8);
+    font-size: $default-font-size;
+    text-align: center
+}
+.tour__h1
+{
+    font-size: $titles-font-size;
+    font-weight: $bold;
+    line-height: 1.3;
+    letter-spacing: .4rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: $bebas;
+    text-transform: uppercase;
+}

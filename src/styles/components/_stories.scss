@@ -1,0 +1,44 @@
+.stories__section{
+    padding: 15rem 0;
+    background-color: #CEE5F2;
+    
+
+}
+.stories__container{
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .6);
+    border-radius: .3rem;
+    padding: 4rem;
+    font-size: $default-font-size;
+    height: 110px;
+    background-color: $color-grey-light-1;
+    transform: skewX(-5deg)
+}
+.stories__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+  
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(-3rem, -2rem);
+
+}
+.stories__exp{
+    padding-right: 3rem;
+    margin-left: 3rem;
+    &-name{
+        color: black;
+        float: right
+    }
+}
+.stories__img{
+    object-fit: contain;
+    height: 100%;
+
+}
+.stories__separation-div{
+    margin: 10rem;
+}
