@@ -1,0 +1,38 @@
+.navigation{
+
+
+    &__check{
+        display: none;
+        
+    }
+    &__label {
+       height: 6rem;
+       width: 6rem;
+       position: fixed;
+       z-index: 9999;
+       top: 8.4rem;
+       color: $white;
+       right: 5.1rem;
+       
+    }
+    &__background{
+        
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background: radial-gradient(#1e3c72, #2a5298);
+        z-index: 9998;
+    }
+    &__nav{
+
+    }
+    &__list{
+
+    }
+    &__item{
+
+    }
+}
