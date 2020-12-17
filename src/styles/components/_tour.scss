@@ -1,6 +1,12 @@
 .tour__section{
     padding: 0 20rem;
   
+    @include respond(tab){
+        padding: 0;
+    }
+    @include respond(phone){
+        padding: 0;
+    }
    
 }
 .tour__container {

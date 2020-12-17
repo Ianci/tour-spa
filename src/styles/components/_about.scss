@@ -89,6 +89,10 @@
         box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.8);
         z-index:999
     }
+    @include respond(phone){
+        left: 10rem;
+        top: 12rem;
+    }
     
 }
 .about__photo-2 {
@@ -99,6 +103,7 @@
         box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.8);
         z-index:999
     }
+    
 }
 .about__photo-p3 {
     left: 20%;

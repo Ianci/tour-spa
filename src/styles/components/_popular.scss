@@ -3,6 +3,13 @@
     background-color: $color-grey-light-1;
     height: 70vh;
     margin-top: 3rem;
+
+    @include respond(tab){
+        padding: 0;
+    }
+    @include respond(phone){
+        padding: 0;
+    }
 }
 .popular__container {
     margin: 12rem;

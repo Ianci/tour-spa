@@ -25,6 +25,13 @@
     align-items: center;
     margin: 0 auto;
     width: 100rem;
+
+    @include respond(tab){
+        max-width: 60rem;
+    }
+    @include respond(phone){
+        max-width: 50rem;
+    }
 }
 .footer__content-div{
     border-top: 1px solid  rgba(156, 152, 152, 0.5);

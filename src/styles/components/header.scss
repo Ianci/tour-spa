@@ -10,16 +10,25 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
     text-align: center;
+    
 }
 .header__logo-div{
     position: absolute;
     top: 40px;
     left: 40px;
+   
 }
 .header__logo {
     height: 35px;
-    
-    
+    @include respond(desktop){
+    height: 35px;
+    }
+    @include respond(tab){
+        height: 30px;
+        }
+        @include respond(phone){
+            height: 25px;
+            }
 }
 .header__h1{
     color: #fff;
@@ -32,10 +41,24 @@
     display: block;
     font-size: 62px;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation-name: moveInLeft;
     animation-duration: 2.5s;
+
+    @include respond(desktop){
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+    @include respond(tab){
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+    
+    @include respond(phone){
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
 }
 .header__h1-sub{
     display: block;
@@ -44,7 +67,19 @@
     letter-spacing: 7px;
     animation-name: moveInRight;
     animation-duration: 2s;
-    
+
+    @include respond(phone){
+        font-size: 2rem;
+        letter-spacing: .1rem;
+    }
+    @include respond(tab){
+        font-size: 2rem;
+        letter-spacing: .1rem;
+    }
+    @include respond(desktop){
+        font-size: 2rem;
+        letter-spacing: .1rem;
+    }
 }
 .header__text-container{
     position: absolute;
